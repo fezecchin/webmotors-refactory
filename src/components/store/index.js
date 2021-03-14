@@ -1,16 +1,23 @@
-// import {createStore} from 'redux';
+import {createStore} from 'redux';
 
-// const initialState = require('../data/data.json')
+//const initialState = require('../data/data.json')
 
-// function vehicles(state = initialState, action) {
-//     switch (action.type) {
-        
-//     }
+const INITIAL_STATE = {
+    makeSelected: [],
+}
+
+function vehicles(state = INITIAL_STATE, action) {
+    switch (action.type) {
+        case 'LIST_MAKE':
+            return {...state, makeSelected: [...state.makeSelected, action.make ]}
+            default:
+                return state;
+    }
     
-// }
+}
 
-// const store = createStore(vehicles);
+const store = createStore(vehicles);
 
-// export default store;
+export default store;
 
   

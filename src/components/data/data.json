@@ -1,6 +1,6 @@
 {   
     "vehicles": [],
-    "makeSelected":"",
+    "makeSelected":[],
     "modelSelected": "",
     "versionSelected": "",
     "clearSelect": []
